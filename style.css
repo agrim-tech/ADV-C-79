@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    background: linear-gradient(#00b330,#009bb3);
+}
+#sort{
+    display: none;
+}
+.number{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;
+}
+#title{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;
+}
+#button{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;
+}
+#sort{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;
+}
+#result{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;
+}
+input{
+    font-family: 'Kufam', cursive;
+    font-Size: 20px;  
+}

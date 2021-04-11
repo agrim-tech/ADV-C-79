@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Student Names</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="title">Name of My Students</p>
+        <span class="number">1</span>
+        <input id="name1" placeholder="Name of the Student" type="text">
+        <br><br>
+        <span class="number">2</span>
+        <input id="name2" placeholder="Name of the Student" type="text">
+        <br><br>
+        <span class="number">3</span>
+        <input id="name3" placeholder="Name of the Student" type="text">
+        <br><br>
+        <span class="number">4</span>
+        <input id="name4" placeholder="Name of the Student" type="text">
+        <br><br>
+        <span class="number">5</span>
+        <input id="name5" placeholder="Name of the Student" type="text">
+        <br><br>
+        <button id="button" onclick="Submit()" >Submit</button>
+        <br>
+        <div id="result">
+        
+        </div>
+        <br>
+        <button id="sort" onclick="Sort()" >Sort</button>
+
+    </body>
+    <script>
+    student_list =[];
+    function Submit(){
+
+    student_list.pop()
+    student_list.pop()
+    student_list.pop()
+    student_list.pop()
+    student_list.pop()
+
+    var name1 = document.getElementById("name1").value;
+    var name2 = document.getElementById("name2").value;
+    var name3 = document.getElementById("name3").value;
+    var name4 = document.getElementById("name4").value;
+    var name5 = document.getElementById("name5").value;
+
+    student_list.push(name1);
+    console.log(student_list);
+    student_list.push(name2);
+    console.log(student_list);
+    student_list.push(name3);
+    console.log(student_list);
+    student_list.push(name4);
+    console.log(student_list);
+    student_list.push(name5);
+    console.log(student_list);
+    
+    document.getElementById("result").innerHTML = student_list;
+
+    document.getElementById("button").style.display = "none";
+
+    document.getElementById("sort").style.display = "inline-block";
+
+    }
+    function Sort() {
+        student_list.sort();
+        document.getElementById("result").innerHTML = student_list;
+
+    }
+    </script>
+</html>
